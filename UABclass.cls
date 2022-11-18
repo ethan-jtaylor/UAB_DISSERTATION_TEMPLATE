@@ -2,7 +2,7 @@
 %%	
 %%	Copyright (c) 2022 Ethan Taylor
 %%	The latest version of this file may be obtained from
-%%		GITHUB LINK HERE
+%%		https://github.com/ethan-jtaylor/UAB_DISSERTATION_TEMPLATE
 %%	
 %%	License: LaTeX Project Public License (www.latex-project.org/lppl.txt)
 %%		Executive summary:
@@ -138,6 +138,9 @@ heightrounded,
 %% Acknowledgments body text
 \newcommand\acknowledgments[1]{\renewcommand\@acknowledgments{#1}}
 \newcommand\@acknowledgments{Acknowledgments text here.}
+%% Type of document(Dissertation, thesis, or proposal)
+\newcommand\typeofdoc[1]{\renewcommand\@typeofdoc{#1}}
+\newcommand\@typeofdoc{Document type here.}
 
 
 %%	COMMAND TO MAKE COPYRIGHT PAGE
@@ -182,7 +185,7 @@ heightrounded,
 			\vspace{2\baselineskip}
 			\MakeTextUppercase{\@adviser, Committee Chair \and \@committee}
 			\vfill
-			A DISSERTATION \\
+			A \@typeofdoc \\
 			\vspace{\baselineskip}
 			Submitted to the graduate faculty of \@university,\\ in partial 		fulfillment of the requirements for the degree of\\ \@degree. \\
 			\vspace{\baselineskip}

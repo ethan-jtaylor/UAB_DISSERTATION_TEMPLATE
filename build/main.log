@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.29)  16 NOV 2022 11:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.29)  18 NOV 2022 12:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -210,24 +210,24 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 (C:\Users\armye\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ))
-(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\LATEX_THESIS\build\m
-ain.aux)
+(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\UAB_DISSERTATION_TEM
+PLATE\build\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -298,8 +298,8 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ] [5
 
 ]
-(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\LATEX_THESIS\build\m
-ain.toc
+(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\UAB_DISSERTATION_TEM
+PLATE\build\main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -311,14 +311,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `main.toc'.
 
  [6]
-(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\LATEX_THESIS\build\m
-ain.lot)
+(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\UAB_DISSERTATION_TEM
+PLATE\build\main.lot)
 \tf@lot=\write4
 \openout4 = `main.lot'.
 
  [7]
-(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\LATEX_THESIS\build\m
-ain.lof)
+(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\UAB_DISSERTATION_TEM
+PLATE\build\main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
@@ -339,14 +339,14 @@ Chapter 3.
 <example-image-a.pdf, id=43, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 110.
+Package pdftex.def Info: example-image-a.pdf  used on input line 112.
 (pdftex.def)             Requested size: 433.62001pt x 325.22668pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\LATEX_THESIS\build\m
-ain.bbl [5
+(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\UAB_DISSERTATION_TEM
+PLATE\build\main.bbl [5
 
 ] [6 <C:/Users/armye/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image-
 a.pdf>]) [7
@@ -356,26 +356,26 @@ APPENDIX A.
 [8
 
 ]
-(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\LATEX_THESIS\build\m
-ain.aux) ) 
+(C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\UAB_DISSERTATION_TEM
+PLATE\build\main.aux) ) 
 Here is how much of TeX's memory you used:
- 5518 strings out of 475389
- 89424 string characters out of 2777000
- 723933 words of memory out of 3000000
- 26834 multiletter control sequences out of 15000+600000
+ 5520 strings out of 475389
+ 89690 string characters out of 2777000
+ 723950 words of memory out of 3000000
+ 26836 multiletter control sequences out of 15000+600000
  472679 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,8n,80p,854b,1353s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/armye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmr12.pfb><C:/Users/armye/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb><C:/Users/armye/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb><C:/Users/armye/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/armye/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/armye/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/armye/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb>
-Output written on C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\LAT
-EX_THESIS\build\main.pdf (16 pages, 106332 bytes).
+<C:/Users/armye/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><C:/Users/armye/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/armye/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/armye/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/armye/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/armye/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Use
+rs/armye/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb>
+Output written on C:\Users\armye\Documents\MAIN\SCHOOL\APPAVOOLAB\TEMPLATES\UAB
+_DISSERTATION_TEMPLATE\build\main.pdf (16 pages, 106332 bytes).
 PDF statistics:
  92 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
