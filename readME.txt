@@ -18,7 +18,7 @@ Images should be stored in the images folder. Sections and other subfiles should
 An example file structure for this template:
 main.tex
 -settings.tex
---UABclass.cls
+--UABdissertationclass.cls
 -*subfiles folder*
 --abstract.tex
 --chapter1.tex

@@ -29,7 +29,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesClass{UABclass}
+\ProvidesClass{UABdissertationclass}
 
 \LoadClass[12pt]{report}
 

@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.29)  5 DEC 2022 08:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.29)  5 DEC 2022 08:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./main.tex
 (main.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-08-30> (settings.tex (UABclass.cls
-Document Class: UABclass 
+L3 programming layer <2022-08-30> (settings.tex (UABdissertationclass.cls
+Document Class: UABdissertationclass 
 (C:\Users\armye\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
 (C:\Users\armye\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
@@ -360,8 +360,8 @@ APPENDIX A.
 PLATE\build\main.aux) ) 
 Here is how much of TeX's memory you used:
  5520 strings out of 475389
- 89690 string characters out of 2777000
- 723954 words of memory out of 3000000
+ 89942 string characters out of 2777000
+ 723966 words of memory out of 3000000
  26836 multiletter control sequences out of 15000+600000
  472679 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
