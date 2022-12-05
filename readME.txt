@@ -1,11 +1,5 @@
 This is a template folder for writing a thesis or dissertation at the University of Alabama at Birmingham.
 
-Author: 
-Ethan Taylor
-The University of Alabama at Birmingham
-ethan.j.taylor96@gmail.com
-
-
 This is based upon the formatting described in the UAB format manual, at the time of this writing this is stored at:
 https://www.uab.edu/graduate/images/documents/resources/current_students/FormatManual.pdf
 
