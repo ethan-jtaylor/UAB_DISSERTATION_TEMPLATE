@@ -138,7 +138,7 @@ heightrounded,
 %% Acknowledgments body text
 \newcommand\acknowledgments[1]{\renewcommand\@acknowledgments{#1}}
 \newcommand\@acknowledgments{Acknowledgments text here.}
-%% Type of document(Dissertation, thesis, or proposal)
+%% Type of document(Dissertation or thesis)
 \newcommand\typeofdoc[1]{\renewcommand\@typeofdoc{#1}}
 \newcommand\@typeofdoc{Document type here.}
 
@@ -185,7 +185,7 @@ heightrounded,
 			\vspace{2\baselineskip}
 			\MakeTextUppercase{\@adviser, Committee Chair \and \@committee}
 			\vfill
-			A \@typeofdoc \\
+			A \MakeTextUppercase{\@typeofdoc} \\
 			\vspace{\baselineskip}
 			Submitted to the graduate faculty of \@university,\\ in partial 		fulfillment of the requirements for the degree of\\ \@degree. \\
 			\vspace{\baselineskip}
