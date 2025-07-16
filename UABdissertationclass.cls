@@ -16,7 +16,7 @@
   right   = 1in,
   footskip= 0.5in,
   heightrounded,
-  showframe
+%  showframe
 }
 \usepackage{tocloft}
 \usepackage{titlesec}
@@ -29,9 +29,15 @@
 \usepackage{etoolbox}
 
 %%	FORMATTING TABLE OF CONTENTS
-\renewcommand{\contentsname}{\hfill Table of Contents \hfill}
-\renewcommand{\cfttoctitlefont}{\pagebreak\MakeTextUppercase}
-\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\contentsname}{\hfill\begin{center}
+TABLE OF CONTENTS
+\end{center}  \hfill
+}
+\renewcommand{\cfttoctitlefont}{}
+\renewcommand{\cftaftertoctitle}{\begin{flushright}
+\textit{Page}
+\end{flushright}}
+\renewcommand{\cftaftertoctitleskip}{-10pt} 
 \renewcommand{\cftchapfont}{ }
 \renewcommand{\cftdot}{.}
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
@@ -43,12 +49,22 @@
 \renewcommand{\cftbeforesubsecskip}{0pt}
 
 %%	FORMATTING LIST OF TABLES AND FIGURES
-\renewcommand{\listfigurename}{\hfill List of Figures \hfill}
-\renewcommand{\cftloftitlefont}{\pagebreak\hfill\MakeTextUppercase}
-\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\listfigurename}{\hfill\begin{center}
+LIST OF FIGURES 
+\end{center} \hfill}
+\renewcommand{\cftloftitlefont}{\hfill}
+\renewcommand{\cftafterloftitle}{
+\begin{flushleft}
+\textit{Figure}\hspace{372pt}\textit{Page}
+\end{flushleft}
+}
+\renewcommand{\cftafterloftitleskip}{-3pt}
 \renewcommand{\listtablename}{\hfill List of Tables \hfill}
-\renewcommand{\cftlottitlefont}{\pagebreak\hfill\MakeTextUppercase}
-\renewcommand{\cftafterlottitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\pagebreak\vspace*{1in}\hfill\MakeTextUppercase}
+\renewcommand{\cftafterlottitle}{
+\begin{flushleft}
+\textit{Table}\hspace{372pt}\textit{Page}
+\end{flushleft}}
 \newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
 \addtocontents{lof}{\protect\noaddvspace}
 \addtocontents{lot}{\protect\noaddvspace}
@@ -100,7 +116,6 @@
 %%	MAKE THE FRONT MATTER
 \newcommand{\makefrontmatter}{
   \thispagestyle{empty}
-%  \topskip=1in
   {\centering
     \begin{singlespace}
       \vspace*{1in}
@@ -121,7 +136,6 @@
   \pagebreak
 
   \begin{frontmatter}
-%    \vspace*{-1.25in}
 	\begin{center}
 	\MakeTextUppercase{\@title} \\
 	\MakeTextUppercase{\@author} \\
@@ -129,99 +143,46 @@
 	ABSTRACT
 	\end{center}
 	\addcontentsline{toc}{chapter}{ABSTRACT}
-%	\afterpage{\vspace*{-1.2in}}
+    \begin{doublespace}
     \@abstract
+    \end{doublespace}
+    
     
     \vfill
 	\begin{flushleft}
 		Keywords: \@keywords
 	\end{flushleft}
 	
-	\newgeometry{tmargin=2in,bmargin=1in,lmargin=1.5in,rmargin=1in}
-    \chapter*{DEDICATION}
-	\addcontentsline{toc}{chapter}{DEDICATION} 
-	\@dedication
-	\restoregeometry
+	\newpage
+	\vspace*{1in}
+	\addcontentsline{toc}{chapter}{DEDICATION}
+	{\centering
+	\singlespacing
+	DEDICATION\par}
+	\vspace*{0.5in}
+	\begin{doublespace}
+	  \@dedication
+	\end{doublespace}
+	\newpage
+	
+	\newpage
+	\vspace*{1in}
+	\addcontentsline{toc}{chapter}{ACKNOWLEDGMENT}
+	{\centering
+	\singlespacing
+	ACKNOWLEDGEMENT\par}
+	\vspace*{0.5in}
+	\begin{doublespace}
+	  \@acknowledgments
+	\end{doublespace}
+	\pagebreak
 
-    %% Acknowledgments
-	\begingroup
-	  \makeatletter
-	  \let\orig@clearpage\clearpage
-	  \let\clearpage\relax
-	  \let\cleardoublepage\relax
-	  \makeatother
-	
-	  \newgeometry{tmargin=2in,bmargin=1in,
-	  lmargin=1.5in,rmargin=1in}
-	
-%	  \chapter*{ACKNOWLEDGMENTS}
-	  \addcontentsline{toc}{chapter}{ACKNOWLEDGMENTS}
-	  {\centering
-		\singlespacing
-			ACKNOWLEDGEMENT\par}
-	  \vspace*{0.5in}
-	
-	  \begin{doublespace}
-	    \@acknowledgments
-	  \end{doublespace}
-	
-	  \makeatletter
-	  \let\clearpage\relax
-	  \restoregeometry
-	  \let\clearpage\orig@clearpage
-	  \makeatother
-	\endgroup
-
-	\begingroup
-	  \makeatletter
-	  \let\orig@clearpage\clearpage
-	  \let\clearpage\relax
-	  \let\cleardoublepage\relax
-	  \makeatother
-	
-	  \newgeometry{tmargin=2in,bmargin=1in,
-	  lmargin=1.5in,rmargin=1in}
-	
-	  \begin{spacing}{1}
-	    \tableofcontents
-	  \end{spacing}
-	
-	  \makeatletter
-	  \let\clearpage\relax
-	  \restoregeometry
-	  \let\clearpage\orig@clearpage
-	  \makeatother
-	\endgroup
-
-	\begingroup
-	  \makeatletter
-	  \let\orig@clearpage\clearpage
-	  \let\clearpage\relax
-	  \let\cleardoublepage\relax
-	  \makeatother
-	
-	  \newgeometry{tmargin=2in,bmargin=1in,
-	  lmargin=1.5in,rmargin=1in}
-	
-      \renewcommand{\thepage}{x}
-      \addcontentsline{toc}{chapter}{LIST OF FIGURES}	
-	  \begin{spacing}{1}
-	    \listoffigures
-	  \end{spacing}
-	
-	  \makeatletter
-	  \let\clearpage\relax
-	  \restoregeometry
-	  \let\clearpage\orig@clearpage
-	  \makeatother
-	\endgroup
-
-%    % List of Figures
-%    \begin{spacing}{1}
-%      \renewcommand{\thepage}{x}
-%      \addcontentsline{toc}{chapter}{LIST OF FIGURES}
-%      \listoffigures
-%    \end{spacing}
+	\begin{spacing}{1}
+		\tableofcontents
+		\pagebreak
+        \addcontentsline{toc}{chapter}{LIST OF FIGURES}
+        \listoffigures
+    \end{spacing}
 
   \end{frontmatter}
 }
@@ -233,15 +194,6 @@
   \pagenumbering{roman}
   \setcounter{page}{3}
   \setcounter{chapter}{0}
-  \begin{doublespace}
-    \renewcommand{\@makechapterhead}[1]{
-      \begin{center}\MakeTextUppercase{##1}\end{center}
-    }
-    \renewcommand{\@makeschapterhead}[1]{
-      \begin{center}\MakeTextUppercase{##1}\end{center}
-    }
-}{
-  \end{doublespace}
 }
 
 %%	BODY ENVIRONMENT
