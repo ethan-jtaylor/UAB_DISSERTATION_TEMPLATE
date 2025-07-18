@@ -33,7 +33,7 @@
 TABLE OF CONTENTS
 \end{center}  \hfill
 }
-\renewcommand{\cfttoctitlefont}{}
+\renewcommand{\cfttoctitlefont}{\vspace*{-0.3in}}
 \renewcommand{\cftaftertoctitle}{\begin{flushright}
 \textit{Page}
 \end{flushright}}
@@ -52,7 +52,7 @@ TABLE OF CONTENTS
 \renewcommand{\listfigurename}{\hfill\begin{center}
 LIST OF FIGURES 
 \end{center} \hfill}
-\renewcommand{\cftloftitlefont}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\vspace*{-0.3in}}
 \renewcommand{\cftafterloftitle}{
 \begin{flushleft}
 \textit{Figure}\hspace{372pt}\textit{Page}
@@ -118,7 +118,7 @@ LIST OF FIGURES
   \thispagestyle{empty}
   {\centering
     \begin{singlespace}
-      \vspace*{1in}
+      \vspace*{0.8in}
       \renewcommand{\and}{\NoCaseChange{\\}}
       \MakeTextUppercase{\@title} \\[6\baselineskip]
       by \\[\baselineskip]
@@ -154,7 +154,7 @@ LIST OF FIGURES
 	\end{flushleft}
 	
 	\newpage
-	\vspace*{1in}
+	\vspace*{0.5in}
 	\addcontentsline{toc}{chapter}{DEDICATION}
 	{\centering
 	\singlespacing
@@ -166,7 +166,7 @@ LIST OF FIGURES
 	\newpage
 	
 	\newpage
-	\vspace*{1in}
+	\vspace*{0.5in}
 	\addcontentsline{toc}{chapter}{ACKNOWLEDGMENT}
 	{\centering
 	\singlespacing
