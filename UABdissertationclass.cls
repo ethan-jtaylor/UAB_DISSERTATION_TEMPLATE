@@ -128,7 +128,7 @@ LIST OF FIGURES
       A DISSERTATION \\[\baselineskip]
       Submitted to the graduate faculty of \@university,\\
       in partial fulfillment of the requirements for the degree of\\
-      \@degree.\\[\baselineskip]
+      \@degree\\[\baselineskip]
       \MakeTextUppercase{\@place}\\[\baselineskip]
       \@gradyear
     \end{singlespace}
