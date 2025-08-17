@@ -132,11 +132,20 @@ Here we just are showing that very long titles can be wrapped correctly. Below i
 %%	You can use chapters and sectioning as typical in this environment
 %%	and it should be properly named and added to the table of contents.
 \begin{appendices}
-\addtocontents{toc}{\setlength{\cftchapnumwidth}{1em}}
-\renewcommand{\appendixname}{APPENDIX}
+
+% Remove appendix letters
+\renewcommand{\thechapter}{} 
+% Optional: remove extra space reserved for chapter numbers in TOC
+\addtocontents{toc}{\setlength{\cftchapnumwidth}{0em}}
+\addtocontents{toc}{\setlength{\cftchapnumwidth}{0em}}
+\renewcommand{\appendixname}{APPENDIX:}
+\renewcommand{\thesection}{A.\arabic{section}}
+\setcounter{chapter}{0} % optional, start appendix chapter numbering at 1
+\setcounter{section}{0} % reset section numbering
 \addtocontents{toc}{\setcounter{tocdepth}{0}}
 \addtocontents{toc}{\protect\renewcommand{\protect\cftchappresnum}{}}
-\chapter{THE FIRST APPENDIX}
+
+\chapter[\MakeTextUppercase{APPENDIX}]{APPENDIX}
 \lipsum[1]
 \end{appendices}
 

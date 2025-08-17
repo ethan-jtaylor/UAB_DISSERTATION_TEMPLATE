@@ -1,6 +1,32 @@
 %%	University of Alabama at Birmingham Dissertation class file
 %%	-----------------------------------------------------------
-%%	(adapted 2025‑07‑15: per‑section top‑margin offsets in front matter)
+%%	
+%%	Copyright (c) 2022 Ethan Taylor
+%%	The latest version of this file may be obtained from
+%%		https://github.com/ethan-jtaylor/UAB_DISSERTATION_TEMPLATE
+%%	
+%%	License: LaTeX Project Public License (www.latex-project.org/lppl.txt)
+%%		Executive summary:
+%%			This software is copyright but you are granted a license which gives
+%%			you, the "user" of the software, legal permission to copy, distribute,
+%%			and/or modify the software. However, if you modify the software and
+%%			then distribute it (even just locally) you must change the name of the
+%%			software to avoid confusion.
+%%	
+%%	OR (dual-licensed)
+%%	
+%%	License: GNU Lesser General Public License (www.gnu.org/licenses/lgpl.html)
+%%	
+%%	This class file was adapted from the UA class file written by Paul
+%%	Kilgo(paulkilgo@gmail.com) which is hosted at https://github.com/OEP/uathesis.
+%%	While the final compiled document appears very similar, the actual class
+%%	structure has undergone heavy rewrites and adapted to maintain compliance
+%%	with the UAB format manual.
+%%	
+%%	Author Information:
+%%		Ethan Taylor
+%%		The University of Alabama at Birmingham
+%%		ethan.j.taylor96@gmail.com
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{UABdissertationclass}
@@ -28,6 +54,13 @@
 \usepackage{eso-pic}
 \usepackage{etoolbox}
 
+% A one-off TOC line with no dot leaders (left-aligned).
+\newcommand{\l@tocheader}[2]{%
+  \addvspace{1ex}
+  \hspace*{0em} #1
+  \addvspace{-1em}
+}
+
 %%	FORMATTING TABLE OF CONTENTS
 \renewcommand{\contentsname}{\hfill\begin{center}
 TABLE OF CONTENTS
@@ -42,8 +75,8 @@ TABLE OF CONTENTS
 \renewcommand{\cftdot}{.}
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftchappagefont}{}
-\renewcommand\cftchappresnum{CHAPTER }
-\cftsetindents{chapter}{0em}{6.5em}
+\renewcommand\cftchappresnum{}
+\cftsetindents{chapter}{0em}{2em}
 \renewcommand{\cftbeforechapskip}{12pt}
 \renewcommand{\cftbeforesecskip}{0pt}
 \renewcommand{\cftbeforesubsecskip}{0pt}
@@ -137,9 +170,9 @@ LIST OF FIGURES
 
   \begin{frontmatter}
 	\begin{center}
-	\MakeTextUppercase{\@title} \\
-	\MakeTextUppercase{\@author} \\
-	\MakeTextUppercase{\@program} \\
+	\MakeTextUppercase{\@title} \\[\baselineskip]
+	\MakeTextUppercase{\@author} \\[\baselineskip]
+	\MakeTextUppercase{\@program} \\[\baselineskip]
 	ABSTRACT
 	\end{center}
 	\addcontentsline{toc}{chapter}{ABSTRACT}
@@ -198,6 +231,10 @@ LIST OF FIGURES
 
 %%	BODY ENVIRONMENT
 \newenvironment{body}{
+
+\addtocontents{toc}{\protect\vspace{1ex}}
+\addtocontents{toc}{\protect\contentsline{tocheader}{CHAPTER}{}{}}
+
   \pagebreak
   \pagenumbering{arabic}
   \setcounter{page}{1}
@@ -222,12 +259,18 @@ LIST OF FIGURES
         \vspace{\baselineskip}\par
       }
     }
-    \renewcommand{\section}{
-      \@startsection{section}{1}{0mm}{4ex}{2ex}{\normalsize}
-    }
+	\renewcommand{\section}{
+	  \@startsection{section}{1}{0mm}  % name, level, indent
+	    {4ex}  % before skip
+	    {2ex}  % after skip
+	    {\centering\normalsize} % formatting: centered, normal size
+	}
     \renewcommand{\subsection}{
-      \@startsection{subsection}{1}{0mm}{1mm}{1mm}{\normalsize}
-    }
+	  \@startsection{subsection}{2}{0mm}  % name, level, indent
+	    {1mm}  % before skip
+	    {1mm}  % after skip
+	    {\raggedright\normalsize\itshape}
+	}
     \topskip=-1in
 }{
   \end{doublespace}
